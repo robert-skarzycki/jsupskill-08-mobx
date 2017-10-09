@@ -8,10 +8,6 @@ import * as cn from 'class-names';
 @observer
 export default class Timetable extends React.Component<{ store: TimetableStore }>
 {
-    componentDidMount() {
-        this.props.store.fetch();
-    }
-
     render() {
         const { store } = this.props;
 
