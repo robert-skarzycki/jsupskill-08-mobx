@@ -23,8 +23,8 @@ export default class TodoList extends React.Component<{ store: TodoListStore }>
                 <div>
                     <h4>Podsumowanie</h4>
                     <p>Liczba wszystkich zadań: {store.items.length}</p>
-                    <p>Liczba zadań do zrobienia: {store.items.filter(i=>!i.isChecked).length}</p>
-                    <p>Liczba zadań zrobionych: {store.items.filter(i=>i.isChecked).length}</p>
+                    <p>Liczba zadań do zrobienia: {store.todoTasksCount }</p>
+                    <p>Liczba zadań zrobionych: {store.doneTasksCount }</p>
                     </div>
             </div>
         );
